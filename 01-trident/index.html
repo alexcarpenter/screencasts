@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Flexbox Trident Pattern</title>
+  <style>
+    .trident {
+      display: flex;
+    }
+    
+    .trident__cell {
+      display: flex;
+    }
+
+    .trident__cell:first-of-type,
+    .trident__cell:last-of-type {
+      flex: 1 1 50%;
+    }
+    
+    .trident__cell:last-of-type {
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="trident">
+    <div class="trident__cell">One Two Three Four One Two Three Four</div>
+    <div class="trident__cell">Five</div>
+    <div class="trident__cell">Six Seven</div>
+  </div>
+</body>
+</html>

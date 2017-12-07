@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Intrinsic Ratios</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: auto;
+      padding: 100px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .ratio {
+      position: relative;
+      display: block;
+    }
+
+    .ratio:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background: red;
+    }
+
+    .ratio__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="ratio">
+    <img class="ratio__content" src="http://placehold.it/800x450" alt="">
+  </div>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio et officiis asperiores doloribus animi eligendi quibusdam quidem alias repellat. Minus ad, eligendi eos architecto reprehenderit consequuntur tenetur tempore suscipit inventore?</p>
+</body>
+</html>
