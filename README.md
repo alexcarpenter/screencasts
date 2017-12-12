@@ -6,3 +6,4 @@ This repo contains the source files that accompany my screencasts over on [YouTu
 - 2017-11-21 - [CSS Flexbox Trident Pattern](https://www.youtube.com/watch?v=7HE_ByY4hDo)
 - 2017-11-24 - [Intrinsic Ratios with CSS](https://www.youtube.com/watch?v=iSaBRUgAXnk)
 - 2017-12-06 - [How to lazyload images using lazysizes](https://www.youtube.com/watch?v=Uwnmn65cMec)
+- 2017-12-12 - [How to lazyload background images](https://www.youtube.com/watch?v=UFKlvJO6GoA)
