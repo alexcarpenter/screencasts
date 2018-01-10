@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS :not selector</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+
+    body {
+      padding: 50px;
+    }
+
+    ul {
+      list-style: none;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    li:not(:last-of-type) {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <article>
+        <h1>Article Title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam maxime esse beatae nihil illum, delectus, illo eos in, quaerat saepe commodi tenetur? Ipsam, quis sint soluta hic quibusdam ut.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Article Title</h1>
+        <p>Ea doloremque at et, obcaecati similique eaque culpa iure adipisci eum rerum molestiae deleniti sint dolorem, necessitatibus ducimus! Cumque ratione vel quo amet earum tempora nihil, unde et deserunt non.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Article Title</h1>
+        <p>Tempore unde quaerat blanditiis dolor repudiandae reprehenderit doloribus minima omnis esse voluptatem illum, reiciendis suscipit. Quidem officia accusantium nostrum deleniti ea, velit eveniet ut dolorum aut perspiciatis nam voluptatem accusamus?</p>
+      </article>
+    </li>
+  </ul>
+</body>
+</html>
