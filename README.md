@@ -12,3 +12,4 @@ This repo contains the source files that accompany my screencasts over on [YouTu
 - 2017-12-26 - [Build your own grid setup with flexbox](https://www.youtube.com/watch?v=PfKepdRfDCw)
 - 2017-12-28 - [How I build components in CraftCMS with Twig](https://www.youtube.com/watch?v=FNIM8MvUL-Q)
 - 2018-01-09 - [Introduction to the CSS :not selector](https://www.youtube.com/watch?v=RMVNySfb1-s)
+- 2018-01-21 - [My current text editor setup](https://www.youtube.com/watch?v=ehkER5IwmaM)
