@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro to the inert attribute</title>
+  <style>
+    [data-modal][aria-hidden="true"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div data-container>
+    <header>Header</header>
+    <button data-modal-show>Show Modal</button>
+    <a href="">Link</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum aut illo, asperiores vel odio culpa dolor officia molestias aliquid tempora nesciunt velit non dolorum dicta eum porro explicabo in dignissimos.</p>
+    <a href="">Link</a>
+    <footer>Footer</footer>
+  </div>
+
+  <div data-modal>
+    <button data-modal-hide>Hide Modal</button>
+    <a href="">Modal Link</a>
+  </div>
+  
+  <script src="https://unpkg.com/wicg-inert@1.1.6/dist/inert.js"></script>
+  <script>
+    var container = document.querySelector('[data-container]');
+    var modal = document.querySelector('[data-modal]');
+    var show = document.querySelector('[data-modal-show]');
+    var hide = document.querySelector('[data-modal-hide]');
+
+    modal.inert = true;
+
+    show.addEventListener('click', function() {
+      modal.inert = false;
+      container.inert = true;
+    });
+
+    hide.addEventListener('click', function() {
+      modal.inert = true;
+      container.inert = false;
+    });
+  </script>
+</body>
+</html>
