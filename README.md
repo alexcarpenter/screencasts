@@ -14,3 +14,4 @@ This repo contains the source files that accompany my screencasts over on [YouTu
 - 2018-01-09 - [Introduction to the CSS :not selector](https://www.youtube.com/watch?v=RMVNySfb1-s)
 - 2018-01-21 - [My current text editor setup](https://www.youtube.com/watch?v=ehkER5IwmaM)
 - 2018-01-25 - [Intro to the inert attribute](https://www.youtube.com/watch?v=aw95rgfpZYY)
+- 2018-02-06 - [Animating box-shadow](https://www.youtube.com/watch?v=ZkDWCCHiPg4)
