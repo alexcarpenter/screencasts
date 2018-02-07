@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animating box shadows</title>
+  <style>
+    .card {
+      margin: 100px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: #f30;
+      border: 2px solid #f30;
+    }
+
+    .one {
+      transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .one:hover {
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+    .two:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      z-index: -1;
+      opacity: 0;
+      transform: scale(0.75);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .two:hover:after {
+      opacity: 1;
+      transform: none;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card one"></div>
+  <div class="card two"></div>
+</body>
+</html>
