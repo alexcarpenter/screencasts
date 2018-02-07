@@ -23,7 +23,7 @@
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
 
-    .two:after {
+    .two:before {
       content: '';
       position: absolute;
       top: 0;
@@ -35,9 +35,10 @@
       opacity: 0;
       transform: scale(0.75);
       transition: all 0.2s ease-in-out;
+      will-change: transform;
     }
 
-    .two:hover:after {
+    .two:hover:before {
       opacity: 1;
       transform: none;
     }
