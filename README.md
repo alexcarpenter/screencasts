@@ -15,3 +15,4 @@ This repo contains the source files that accompany my screencasts over on [YouTu
 - 2018-01-21 - [My current text editor setup](https://www.youtube.com/watch?v=ehkER5IwmaM)
 - 2018-01-25 - [Intro to the inert attribute](https://www.youtube.com/watch?v=aw95rgfpZYY)
 - 2018-02-06 - [Animating box-shadow](https://www.youtube.com/watch?v=ZkDWCCHiPg4)
+- 2018-02-25 - [How to start using CSS variables today](https://youtu.be/jzosDgJE_Ms)
