@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Breakout CSS</title>
+  <style>
+    :root {
+      --wrapper: 1000px;
+      --inner: 700px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 4rem 2rem;
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    blockquote {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .c-article {
+      position: relative;
+      max-width: var(--wrapper);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .c-article__header {
+      max-width: var(--inner);
+      margin-bottom: 2rem;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .c-article__header h1 {
+      font-size: 2rem;
+    }
+
+    .c-article__content > *:not(.u-break-out) {
+      display: block;
+      max-width: var(--inner);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .c-article__content > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <article class="c-article">
+    <header class="c-article__header">
+      <h1>Breakout CSS Example</h1>
+    </header>
+
+    <div class="c-article__content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores aspernatur magni assumenda quam alias et placeat eos sapiente tenetur molestias ducimus quis autem, ex voluptate praesentium accusamus culpa. Perferendis!</p>
+      <figure class="u-break-out">
+        <img src="http://placehold.it/1600x900" alt="">
+        <figcaption>This is a figcaption</figcaption>
+      </figure>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sequi nam totam facilis beatae, mollitia quasi doloribus facere temporibus delectus culpa animi maxime corporis quam incidunt esse provident, id tempora!</p>
+      <blockquote class="u-break-out">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere unde earum veritatis voluptate asperiores. Repellat.</p>
+      </blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sequi nam totam facilis beatae, mollitia quasi doloribus facere temporibus delectus culpa animi maxime corporis quam incidunt esse provident, id tempora!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sequi nam totam facilis beatae, mollitia quasi doloribus facere temporibus delectus culpa animi maxime corporis quam incidunt esse provident, id tempora!</p>
+    </div>
+  </article>
+</body>
+</html>
